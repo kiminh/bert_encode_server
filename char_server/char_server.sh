@@ -1,0 +1,13 @@
+python char_server.py \
+  -albert True \
+  -model_dir ~/pretrained_lm/albert_small_chinese/ \
+  -ckpt_name albert_model.ckpt \
+  -config_name albert_config.json \
+  -priority_batch_size 2 \
+  -num_worker 1 \
+  -http_port 2606 \
+  -pooling_strategy NONE \
+  -http_max_connect 40 \
+  -max_seq_len 35 \
+  -no_special_token
+  -cpu
