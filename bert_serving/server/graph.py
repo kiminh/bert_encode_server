@@ -68,7 +68,7 @@ def optimize_graph(args, logger=None):
         with jit_scope():
             input_tensors = [input_ids, input_mask, input_type_ids]
 
-            if bool(args.albert):
+            if args.albert:
                 model = modeling.AlBertModel(
                     config=bert_config,
                     is_training=False,

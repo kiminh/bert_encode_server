@@ -1,5 +1,4 @@
 python sent_server.py \
-  -albert True \
   -model_dir ~/pretrained_lm/albert_small_chinese/ \
   -ckpt_name albert_model.ckpt \
   -config_name albert_config.json \
@@ -8,5 +7,6 @@ python sent_server.py \
   -http_port 2606 \
   -http_max_connect 40 \
   -max_seq_len 35 \
-  -no_special_token
-  -cpu
+  -no_special_token \
+  -cpu \
+  -albert

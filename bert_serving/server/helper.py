@@ -90,7 +90,7 @@ def get_args_parser():
                         help='filename of the JSON config file for BERT model.')
     group1.add_argument('-graph_tmp_dir', type=str, default=None,
                         help='path to graph temp file')
-    group1.add_argument('-albert', type=bool, default=False,
+    group1.add_argument('-albert', action='store_true', default=False,
                         help='if the model is an albert model')
 
     group2 = parser.add_argument_group('BERT Parameters',
