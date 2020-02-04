@@ -4,9 +4,11 @@ python sent_server.py \
   -config_name albert_config.json \
   -priority_batch_size 2 \
   -num_worker 1 \
+  -port 2601 \
+  -port_out 2602 \
   -http_port 2606 \
   -http_max_connect 40 \
   -max_seq_len 35 \
   -no_special_token \
   -cpu \
-  -albert
+  -albert \

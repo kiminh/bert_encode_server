@@ -4,6 +4,8 @@ python char_server.py \
   -config_name bert_config.json \
   -priority_batch_size 2 \
   -num_worker 1 \
+  -port 2601 \
+  -port_out 2602 \
   -http_port 2606 \
   -pooling_strategy NONE \
   -http_max_connect 40 \
