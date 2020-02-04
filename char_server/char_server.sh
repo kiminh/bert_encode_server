@@ -11,5 +11,6 @@ python char_server.py \
   -http_max_connect 40 \
   -max_seq_len 35 \
   -no_special_token \
+  -mask_cls_sep \
   -cpu \
 #  -albert \
